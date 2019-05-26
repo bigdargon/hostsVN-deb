@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [[ $1 == install ]]; then
+
+echo "Đang sao lưu tập tin hosts..."
+mkdir /etc/hostsVN
+cp -a /etc/hosts /etc/hostsVN/originalhosts
+exit 0
+
+fi

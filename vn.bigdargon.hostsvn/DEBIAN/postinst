@@ -1,0 +1,11 @@
+#!/bin/bash
+cd /etc/hostsVN
+echo "Đang tải hostsVN từ Github"
+wget -O hosts.tmp https://github.com/bigdargon/hostsVN/raw/master/option/hosts-iOS
+cp -a hosts.tmp /etc/hosts
+rm -rf hosts.tmp
+echo "Khởi động lại mDNSResponder..."
+killall -9 mDNSResponder
+killall -9 mDNSResponderHelper
+echo "Respring thiết bị để hoàn tất!"
+exit 0
