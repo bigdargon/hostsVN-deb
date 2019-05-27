@@ -1,6 +1,6 @@
 Package: vn.bigdargon.hostsvn
 Name: hostsVN
-Version: 1.2
+Version: 1.3
 Architecture: iphoneos-arm
 Pre-Depends: dpkg (>= 1.13.25-5), wget
 Description: Hosts block ads of Vietnamese
